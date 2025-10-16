@@ -14,7 +14,7 @@ const menuItems = [
   { name: "Pricing", href: "#link" },
   { name: "About", href: "#link" },
 ];
-// update
+
 
 export const HeroHeader = () => {
   const [menuState, setMenuState] = React.useState(false);
