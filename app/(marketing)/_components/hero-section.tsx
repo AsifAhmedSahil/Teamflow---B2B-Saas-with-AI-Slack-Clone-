@@ -30,7 +30,7 @@ const transitionVariants = {
         },
     },
 }
-
+// update
 export default function HeroSection() {
     return (
         <>
