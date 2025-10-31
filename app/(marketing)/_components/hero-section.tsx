@@ -10,7 +10,7 @@ import { HeroHeader } from './header'
 import BackgroundImage from "@/public/night-mode.webp"
 import HeroLight from "@/public/screenshot-light.png"
 import HeroDark from "@/public/screenshot-dark.png"
-
+// update
 const transitionVariants = {
     item: {
         hidden: {
