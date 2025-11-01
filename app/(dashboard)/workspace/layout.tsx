@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react'
 import { WorkspaceList } from './_components/WorkspaceList'
 import CreateWWorkspace from './_components/CreateWWorkspace'
+import UserNav from './_components/UserNav'
 
 const WorkspaceLayout = ({children}:{children:ReactNode}) => {
   return (
@@ -10,7 +11,13 @@ const WorkspaceLayout = ({children}:{children:ReactNode}) => {
             <div className='mt-4 cursor-pointer'>
               <CreateWWorkspace/>
             </div>
+            <div className='mt-auto'>
+              <UserNav/>
+
+            </div>
         </div>
+
+        {children}
       
     </div>
   )
