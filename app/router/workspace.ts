@@ -5,6 +5,7 @@ import z from "zod";
 import { base } from "../middlewares/base";
 import { requireAuthMiddleware } from "../middlewares/auth";
 import { requireWorkspaceMiddleware } from "../middlewares/workspace";
+import { workspaceSchema } from "../schemas/workspace";
 
 export const listWorkspaces = base
   .use(requireAuthMiddleware)
@@ -48,4 +49,24 @@ export const listWorkspaces = base
       user: context.user,
       currentWorkspace: context.workspace,
     };
+  });
+
+  export const createWorkspace = base
+  .use(requireAuthMiddleware)
+  .use(requireWorkspaceMiddleware)
+  .route({
+    method: "POST",
+    path: "/workspace",
+    summary: "Create a new workspaces",
+    tags: ["workspace"],
+  })
+  .input(workspaceSchema)
+  .output(
+    z.object({
+     orgCode: z.string(),
+     workspaceName: z.string()
+    })
+  )
+  .handler(async ({ context, errors }) => {
+
   });
