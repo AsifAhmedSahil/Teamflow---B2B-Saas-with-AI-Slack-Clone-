@@ -74,7 +74,7 @@ const UserNav = () => {
             </PortalLink>
           </DropdownMenuItem>
         </DropdownMenuGroup>
-
+{/* update */}
         <DropdownMenuSeparator />
 
         <DropdownMenuItem asChild>
