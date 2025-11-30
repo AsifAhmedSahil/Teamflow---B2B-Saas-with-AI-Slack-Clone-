@@ -49,7 +49,7 @@ const UserNav = () => {
               {user.given_name.slice(0, 2).toUpperCase()}
             </AvatarFallback>
           </Avatar>
-{/* update */}
+
           <div className="grid flex-1 text-left text-sm leading-tight">
             <p className="truncate font-medium">{user.given_name}</p>
             <p className="truncate text-muted-foreground text-sm">
