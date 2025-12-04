@@ -35,7 +35,7 @@ const UserNav = () => {
           </Avatar>
         </Button>
       </DropdownMenuTrigger>
-{/* update */}
+
       <DropdownMenuContent
         align="end"
         side="right"
