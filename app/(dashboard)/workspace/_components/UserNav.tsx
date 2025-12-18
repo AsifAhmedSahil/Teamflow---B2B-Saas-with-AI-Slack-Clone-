@@ -21,7 +21,7 @@ const user = {
     "https://avatars.githubusercontent.com/u/106021267?s=400&u=dbc5c2453ddbcd7eb8362cb1d5a83bd0a7e86846&v=4",
   given_name: "Asif Ahmed Sahil",
 };
-// update
+
 const UserNav = () => {
   return (
     <DropdownMenu>
