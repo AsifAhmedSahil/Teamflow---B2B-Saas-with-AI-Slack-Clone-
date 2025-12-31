@@ -15,7 +15,7 @@ import {
   LogoutLink,
   PortalLink,
 } from "@kinde-oss/kinde-auth-nextjs/components";
-
+// update
 const user = {
   picture:
     "https://avatars.githubusercontent.com/u/106021267?s=400&u=dbc5c2453ddbcd7eb8362cb1d5a83bd0a7e86846&v=4",
